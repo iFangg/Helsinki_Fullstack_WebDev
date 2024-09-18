@@ -38,5 +38,8 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
-    same process as previously mentioned
+    browser->>server: same process as previously mentioned
+    activate server
+    server-->>browser: same process as previously mentioned
+    deactivate server
 ```
