@@ -26,4 +26,17 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: input text into "note", submit text with "save" button
+    activate server
+    server-->>browser: posts new note
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+
+    same process as previously mentioned
 ```
