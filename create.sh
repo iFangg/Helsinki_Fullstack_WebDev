@@ -1,6 +1,6 @@
-#!/bin/dash
+#!/bin/bash
 
-count=0
+count=2
 while [ "$count" -le 13 ];
 do
     mkdir "part$count"
